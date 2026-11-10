@@ -1,0 +1,34 @@
+version: v1.25.0
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: 'Tidak ada versi perbaikan; komponen bawaan Juice Shop yang sengaja rentan'
+        expires: 2027-06-30T00:00:00.000Z
+  SNYK-JS-EXPRESSJWT-575022:
+    - '*':
+        reason: 'Upgrade ke express-jwt 7.x mengubah API dan merusak login Juice Shop'
+        expires: 2027-06-30T00:00:00.000Z
+  'npm:jsonwebtoken:20150331':
+    - '*':
+        reason: 'Upgrade ke jsonwebtoken 9.x merusak mekanisme autentikasi aplikasi target'
+        expires: 2027-06-30T00:00:00.000Z
+  SNYK-JS-JWS-14188253:
+    - '*':
+        reason: 'Dependensi turunan jsonwebtoken lama; ikut diterima bersama kelompok JWT'
+        expires: 2027-06-30T00:00:00.000Z
+  'npm:jws:20160726':
+    - '*':
+        reason: 'Dependensi turunan jsonwebtoken lama; ikut diterima bersama kelompok JWT'
+        expires: 2027-06-30T00:00:00.000Z
+  'npm:base64url:20180511':
+    - '*':
+        reason: 'Dependensi turunan jsonwebtoken lama; ikut diterima bersama kelompok JWT'
+        expires: 2027-06-30T00:00:00.000Z
+  SNYK-JS-MOMENT-19821607:
+    - '*':
+        reason: 'Dependensi turunan jsonwebtoken lama; tidak ada jalur upgrade tanpa merusak login'
+        expires: 2027-06-30T00:00:00.000Z
+  SNYK-JS-MOMENT-2440688:
+    - '*':
+        reason: 'Dependensi turunan jsonwebtoken lama; tidak ada jalur upgrade tanpa merusak login'
+        expires: 2027-06-30T00:00:00.000Z
